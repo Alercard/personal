@@ -1,37 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Franklin Lucero</title>
-	<style type="text/css">
-		* {
-			border: 2px solid red;
-			margin: 5px;
-		}
-
-		body {
-			background: lightblue;
-			font-family: arial;
-			text-align: center;
-		}
-		a {
-			color: white;
-		}
-		h1 {
-			text-transform: uppercase;
-		}
-		img {
-			border-radius: 50%;
-		}
-	</style>
-</head>
-<body>
-	<h1>Franklin Lucero</h1>
-
-	<img src="imagenes/personal.jpg" alt="Franklin Lucero">
-
-	<h2>Ingeniero en Sistemas</h2>
-	<h2>Ecuador - Guayaquil</h2>
-	<h4>Ingeniero especializado en desarrollo de aplicaciones de escritorio y web. En constante aprendizaje y amante de los desafios.</h4>
-	<a href="https://www.linkedin.com/in/franklin-lucero-4a4711a2/" target="_blank"><img src="imagenes/linkedin-logo.png" height="25px"></img></a>
-</body>
+	<head>
+		<title>Franklin Lucero</title>
+	</head>
+	<!-- body: Importante, es en donde se programa el contenido -->
+	<body>
+		<!-- header: se usa especialmente para cabeceras -->
+		<header>
+			<figure>
+				<img src="images/personal.jpg" alt="Franklin Lucero">
+			</figure>
+			<!-- H1 es una etiqueta especial, no se debe abusar de su uso. -->
+			<!-- H1 debe ser un resumen de lo que se quiero mostrar en la página  -->
+			<!-- H1 se deberia usar una sola vez por pagina para mejorar el SEO  -->
+			<h1>Franklin Lucero</h1>
+			<h2>Ingeniero en Sistemas</h2>
+			<h2>Ecuador - Guayaquil</h2>
+			<!-- Nav: se usa para menus -->
+			<nav>
+				<!-- ul: unordered list, es una lista desordenada de elementos -->
+				<ul>
+					<li>
+						<!-- a: ancla, maneja rutas absolutas (www.algo.com/otracosa) y relativas (/otracosa) -->
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#conocimientos">Conocimientos</a>
+					</li>
+					<li>
+						<a href="#cualidades">Cualidades</a>
+					</li>
+					<li>
+						<a href="#pasatiempos">Pasatiempos</a>
+					</li>
+					<li>
+						<a href="#proyectos">Proyectos</a>
+					</li>
+					<li>
+						<a href="historia.html">Historia</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- section: se usa dividir contenido -->
+		<div>
+			<section>
+				<h2>Bio</h2>
+				<h4>Ingeniero especializado en desarrollo de aplicaciones de escritorio y web. En constante aprendizaje y amante de los desafios. Actualmente trabaja en su proyecto personal para rentar software, en donde piensa embeber su experiencia obtenida en sus trabajos anteriorees</h4>
+			</section>
+			<section id="conocimientos">
+				<h2>Conocimientos</h2>
+				<!-- article: se usa para contener contenido especifico -->
+				<article>
+					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
+					<ol>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Laravel</li>
+						<li>MySql</li>
+						<li>Sql Server</li>
+					</ol>
+				</article>
+			</section>
+			<section id="cualidades">
+				<h2>Cualidades</h2>
+				<article>
+					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
+					<ol>
+						<li>Amable</li>
+						<li>Deportista</li>
+						<li>Investigador</li>
+						<li>Grupal</li>
+					</ol>
+				</article>
+			</section>
+			<section id="pasatiempos">
+				<h2>Pasatiempos</h2>
+				<article>
+					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
+					<ol>
+						<li>Gamming</li>
+						<li>Guitarra</li>
+						<li>Deportes</li>
+						<li>Pintura</li>
+					</ol>
+				</article>
+			</section>
+			<section id="proyectos">
+				<h2>Proyectos</h2>
+				<article>
+					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
+					<ol>
+						<li>Smartcloud WS</li>
+						<li>Capacitación</li>
+						<li>Gamming</li>
+						<li>Inglés</li>
+					</ol>
+				</article>
+			</section>
+		</div>
+		<!-- footer: pie de pagina -->
+		<footer>
+			<div>
+				<h3>Contacto</h3>
+				<a href="tel:+593998951056">
+					<strong>Cel:</strong>
+					<span>(+593) 9989 51056</span>
+				</a>
+				<a href="mailto:frank_lucero@hotmail.com">
+					<strong>E-mail:</strong>
+					<span>frank_lucero@hotmail.com</span>
+				</a>
+			</div>
+			<div>
+				<h3>Referencia</h3>
+				<a href="https://www.linkedin.com/in/franklin-lucero-4a4711a2/" target="_blank">
+					<img src="images/linkedin-logo.png" alt="linkedin" height="25px" />
+				</a>
+				<a href="https://www.facebook.com/FrankLuceroC" target="_blank">
+					<img src="images/facebook-logo.png" alt="facebook" height="25px"/>
+				</a>
+				<a href="https://www.instagram.com/@frank.com.ec" target="_blank">
+					<img src="images/instagram-logo.png" alt="instagram" height="25px"/>
+				</a>
+			</div>
+			<div>
+				<span>Copyright 2017 (r) - Franklin Lucero</span>
+			</div>
+		</footer>
+	</body>
 </html> 
