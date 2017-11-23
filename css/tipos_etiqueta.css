@@ -1,0 +1,43 @@
+/* selector universal */
+* {
+	border: 2px solid red;
+	margin: 10px;
+}
+
+/* selector de etiqueta */
+header {
+	background: lightblue;
+}
+
+section {
+	border-color: salmon;
+}
+
+h3 {
+	color: blue;
+}
+
+footer {
+	background: black;
+	color: white;
+}
+
+/* selector descendente */
+section h3 {
+	color: green;
+}
+
+/* selector de clase */
+.bg-1 {
+	background: lightgray;
+}
+.bg-2 {
+	background: peru;
+}
+
+/* selector de id */
+/* los id solo pueden existir uno por pagina */
+#bio {
+	background: #4286f4;
+	color: white;
+}
