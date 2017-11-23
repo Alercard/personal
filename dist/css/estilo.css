@@ -3,6 +3,9 @@
 	/* url puede ser una ruta relativa como este caso */
 	background-image: url('../images/header-fondo.jpg');
 	color: white;
+	/* tipogracias: por default Times, porque todos la soportan*/
+	/* proyectos de googlefonts: google.com/fonts; */
+	font-family: 'Noto Serif', serif;
 }
 
 .PersonalHeader-title {
