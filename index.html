@@ -8,126 +8,127 @@
 	<!-- body: Importante, es en donde se programa el contenido -->
 	<body>
 		<!-- header: se usa especialmente para cabeceras -->
-		<header>
-			<figure>
+		<!-- Para definir las clases, usaremos la metodologia BEM: Bloque-Elemento Modificador -->
+		<header class="PersonalHeader u-wrapper">
+			<figure class="PersonalHeader-photo">
 				<img src="images/personal.jpg" alt="Franklin Lucero">
 			</figure>
 			<!-- H1 es una etiqueta especial, no se debe abusar de su uso. -->
 			<!-- H1 debe ser un resumen de lo que se quiero mostrar en la página  -->
 			<!-- H1 se deberia usar una sola vez por pagina para mejorar el SEO  -->
-			<h1>Franklin Lucero</h1>
-			<h3>Ingeniero en Sistemas</h3>
-			<h3>Ecuador - Guayaquil</h3>
+			<h1 class="PersonalHeader-title">Franklin Lucero</h1>
+			<h3 class="PersonalHeader-subtitle">Ingeniero en Sistemas</h3>
+			<h3 class="PersonalHeader-subtitle">Ecuador - Guayaquil</h3>
 			<!-- Nav: se usa para menus -->
-			<nav>
+			<nav class="PersonalHeader-navbar">
 				<!-- ul: unordered list, es una lista desordenada de elementos -->
-				<ul>
-					<li>
+				<ul class="PersonalHeader-menu">
+					<li class="PersonalHeader-menu-item">
 						<!-- a: ancla, maneja rutas absolutas (www.algo.com/otracosa) y relativas (/otracosa) -->
 						<a href="index.html">Home</a>
 					</li>
-					<li>
+					<li class="PersonalHeader-menu-item">
 						<a href="#conocimientos">Conocimientos</a>
 					</li>
-					<li>
+					<li class="PersonalHeader-menu-item">
 						<a href="#cualidades">Cualidades</a>
 					</li>
-					<li>
+					<li class="PersonalHeader-menu-item">
 						<a href="#pasatiempos">Pasatiempos</a>
 					</li>
-					<li>
+					<li class="PersonalHeader-menu-item">
 						<a href="#proyectos">Proyectos</a>
 					</li>
-					<li>
+					<li class="PersonalHeader-menu-item">
 						<a href="historia.html">Historia</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<!-- section: se usa dividir contenido -->
-		<div>
-			<section id="bio" class="bg-1">
-				<h3>Bio</h3>
+		<div class="PersonalContent u-wrapper">
+			<section id="bio" class="PersonalContent-row u-background-1">
+				<h3 class="PersonalContent-title">Bio</h3>
 				<h4>Ingeniero especializado en desarrollo de aplicaciones de escritorio y web. En constante aprendizaje y amante de los desafios. Actualmente trabaja en su proyecto personal para rentar software, en donde piensa embeber su experiencia obtenida en sus trabajos anteriorees</h4>
 			</section>
-			<section id="conocimientos" class="bg-2">
-				<h3>Conocimientos</h3>
+			<section id="conocimientos" class="PersonalContent-row u-background-2">
+				<h3 class="PersonalContent-title">Conocimientos</h3>
 				<!-- article: se usa para contener contenido especifico -->
-				<article>
+				<article class="PersonalContent-article">
 					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
-					<ol>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>Laravel</li>
-						<li>MySql</li>
-						<li>Sql Server</li>
+					<ol class="PersonalContent-list">
+						<li class="PersonalContent-list-item">HTML</li>
+						<li class="PersonalContent-list-item">CSS</li>
+						<li class="PersonalContent-list-item">JavaScript</li>
+						<li class="PersonalContent-list-item">Laravel</li>
+						<li class="PersonalContent-list-item">MySql</li>
+						<li class="PersonalContent-list-item">Sql Server</li>
 					</ol>
 				</article>
 			</section>
-			<section id="cualidades" class="bg-1">
-				<h3>Cualidades</h3>
-				<article>
+			<section id="cualidades" class="PersonalContent-row u-background-1">
+				<h3 class="PersonalContent-title">Cualidades</h3>
+				<article class="PersonalContent-article">
 					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
-					<ol>
-						<li>Amable</li>
-						<li>Deportista</li>
-						<li>Investigador</li>
-						<li>Grupal</li>
+					<ol class="PersonalContent-list">
+						<li class="PersonalContent-list-item">Amable</li>
+						<li class="PersonalContent-list-item">Deportista</li>
+						<li class="PersonalContent-list-item">Investigador</li>
+						<li class="PersonalContent-list-item">Grupal</li>
 					</ol>
 				</article>
 			</section>
-			<section id="pasatiempos" class="bg-2">
-				<h3>Pasatiempos</h3>
-				<article>
+			<section id="pasatiempos" class="PersonalContent-row u-background-2">
+				<h3 class="PersonalContent-title">Pasatiempos</h3>
+				<article class="PersonalContent-article">
 					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
-					<ol>
-						<li>Gamming</li>
-						<li>Guitarra</li>
-						<li>Deportes</li>
-						<li>Pintura</li>
+					<ol class="PersonalContent-list">
+						<li class="PersonalContent-list-item">Gamming</li>
+						<li class="PersonalContent-list-item">Guitarra</li>
+						<li class="PersonalContent-list-item">Deportes</li>
+						<li class="PersonalContent-list-item">Pintura</li>
 					</ol>
 				</article>
 			</section>
-			<section id="proyectos" class="bg-1">
-				<h3>Proyectos</h3>
-				<article>
+			<section id="proyectos" class="PersonalContent-row u-background-1">
+				<h3 class="PersonalContent-title">Proyectos</h3>
+				<article class="PersonalContent-article">
 					<!-- ol: lista ordenada, cada item tendra un numero de prefijo segun el ordenada -->
-					<ol>
-						<li>Smartcloud WS</li>
-						<li>Capacitación</li>
-						<li>Gamming</li>
-						<li>Inglés</li>
+					<ol class="PersonalContent-list">
+						<li class="PersonalContent-list-item">Smartcloud WS</li>
+						<li class="PersonalContent-list-item">Capacitación</li>
+						<li class="PersonalContent-list-item">Gamming</li>
+						<li class="PersonalContent-list-item">Inglés</li>
 					</ol>
 				</article>
 			</section>
 		</div>
 		<!-- footer: pie de pagina -->
-		<footer>
-			<div>
-				<h3>Contacto</h3>
-				<a href="tel:+593998951056">
+		<footer class="PersonalFooter u-wrapper">
+			<div class="PersonalFooter-info">
+				<h3 class="PersonalFooter-info-title">Contacto</h3>
+				<a class="PersonalFooter-info-detail" href="tel:+593998951056">
 					<strong>Cel:</strong>
 					<span>(+593) 9989 51056</span>
 				</a>
-				<a href="mailto:frank_lucero@hotmail.com">
+				<a class="PersonalFooter-info-detail" href="mailto:frank_lucero@hotmail.com">
 					<strong>E-mail:</strong>
 					<span>frank_lucero@hotmail.com</span>
 				</a>
 			</div>
-			<div>
-				<h3>Referencia</h3>
-				<a href="https://www.linkedin.com/in/franklin-lucero-4a4711a2/" target="_blank">
+			<div class="PersonalFooter-info">
+				<h3 class="PersonalFooter-info-title">Referencia</h3>
+				<a class="PersonalFooter-info-detail" href="https://www.linkedin.com/in/franklin-lucero-4a4711a2/" target="_blank">
 					<img src="images/linkedin-logo.png" alt="linkedin" height="25px" />
 				</a>
-				<a href="https://www.facebook.com/FrankLuceroC" target="_blank">
+				<a class="PersonalFooter-info-detail" href="https://www.facebook.com/FrankLuceroC" target="_blank">
 					<img src="images/facebook-logo.png" alt="facebook" height="25px"/>
 				</a>
-				<a href="https://www.instagram.com/@frank.com.ec" target="_blank">
+				<a class="PersonalFooter-info-detail" href="https://www.instagram.com/@frank.com.ec" target="_blank">
 					<img src="images/instagram-logo.png" alt="instagram" height="25px"/>
 				</a>
 			</div>
-			<div>
+			<div class="PersonalFooter-copyright">
 				<span>Copyright 2017 (r) - Franklin Lucero</span>
 			</div>
 		</footer>
