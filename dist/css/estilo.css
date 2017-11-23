@@ -1,0 +1,14 @@
+.PersonalHeader {
+	/* background puede tener #color, rgb, rgba, url, */
+	/* url puede ser una ruta relativa como este caso */
+	background-image: url('../images/header-fondo.jpg');
+	color: white;
+}
+
+.PersonalHeader-title {
+	text-transform: uppercase;
+}
+
+.PersonalHeader-menu {
+	font-size: 20px;
+}
