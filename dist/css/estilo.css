@@ -1,3 +1,15 @@
+body {
+	margin: 0;
+}
+
+.u-background-1 {
+	background: #92ae9f;
+}
+
+.u-background-2 {
+	background: #508ea2;
+}
+
 .PersonalHeader {
 	/* background puede tener #color, rgb, rgba, url, */
 	/* url puede ser una ruta relativa como este caso */
@@ -6,12 +18,69 @@
 	/* tipogracias: por default Times, porque todos la soportan*/
 	/* proyectos de googlefonts: google.com/fonts; */
 	font-family: 'Noto Serif', serif;
+	text-align: center;
+}
+
+.PersonalHeader-photo {
+	margin: 0;
+	padding-top: 15px;
 }
 
 .PersonalHeader-title {
 	text-transform: uppercase;
+	border-bottom: 2px solid white;
+	margin: 0;
+}
+
+.PersonalHeader-subtitle {
+	margin: 0;
 }
 
 .PersonalHeader-menu {
-	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.PersonalHeader-menu-item {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+.PersonalHeader-menu-item a {
+	text-decoration: none;
+	color: white;
+}
+
+.PersonalContent-row {
+	height: 200px;
+}
+
+.PersonalContent-title{
+	margin: 0;
+	font-size: 30px;
+	padding: 10px 0 0 5px;
+	color: #ffe7e7;
+}
+
+.PersonalContent-article {
+	padding: 0 0 0 5px;
+}
+
+.PersonalFooter {
+	background: black;
+	color: white;
+}
+
+.PersonalFooter-info {
+	display: inline-block;
+}
+
+.PersonalFooter-info-title {
+
+}
+
+.PersonalFooter-info-detail {
+	display: block;
 }
