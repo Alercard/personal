@@ -10,6 +10,12 @@ body {
 	background: #508ea2;
 }
 
+.u-float {
+	float: right;
+	/* float: left; */
+	margin: 10px;
+}
+
 .PersonalHeader {
 	/* background puede tener #color, rgb, rgba, url, */
 	/* url puede ser una ruta relativa como este caso */
@@ -55,6 +61,7 @@ body {
 
 .PersonalContent-row {
 	height: 200px;
+	position: relative;
 }
 
 .PersonalContent-title{
@@ -62,6 +69,13 @@ body {
 	font-size: 30px;
 	padding: 10px 0 0 5px;
 	color: #ffe7e7;
+}
+
+.PersonalContent-icon {
+	height: 80px;
+	position: absolute;
+	top: -18px;
+	left: 200px;
 }
 
 .PersonalContent-article {
