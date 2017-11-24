@@ -90,6 +90,17 @@ body {
 	padding: 0 0 0 5px;
 }
 
+.PersonalContent-list-item {
+	/* para quitar el contador de la lista */
+	list-style: none;
+}
+
+.PersonalContent-list-item::before {
+	font-family: "FontAwesome";
+	content:  "\f00c ";
+	color: green;
+}
+
 .PersonalFooter {
 	background: black;
 	color: white;
@@ -101,6 +112,10 @@ body {
 .PersonalFooter-info {
 	display: inline-block;
 	margin: 0 15px;
+}
+
+.PersonalFooter-info:last-child {
+	margin: auto 5px;
 }
 
 .PersonalFooter-info-title {
